@@ -25,7 +25,11 @@ clear ; close all; clc
 %  contains the label (y).
 
 data = load('ex2data2.txt');
-X = data(:, [1, 2]); y = data(:, 3);
+[m, n] = size(data);
+fprintf('Training example count: %d; Feature count: %d.\n', m, n);
+
+X = data(:, 1:(n - 1));
+y = data(:, n);
 
 plotData(X, y);
 
