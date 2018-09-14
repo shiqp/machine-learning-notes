@@ -9,16 +9,16 @@ figure; hold on;
 % ====================== YOUR CODE HERE ======================
 % Instructions: Plot the positive and negative examples on a
 %               2D plot, using the option 'k+' for the positive
-%               examples and 'ko' for the negative examples.
+%               examples and 'ro' for the negative examples.
 %
 
+% Find indices of positive and negative examples.
+posIndices = find(y == 1);
+negIndices = find(y == 0);
 
-
-
-
-
-
-
+% Plot data.
+plot(X(posIndices, 1), X(posIndices, 2), 'k+');
+plot(X(negIndices, 1), X(negIndices, 2), 'ro');
 
 % =========================================================================
 

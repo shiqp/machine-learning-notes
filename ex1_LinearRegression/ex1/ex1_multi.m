@@ -9,8 +9,7 @@ fprintf('Loading data ...\n');
 
 %% Load Data
 data = load('ex1data2.txt');
-m = size(data, 1);
-n = size(data, 2);
+[m, n] = size(data);
 fprintf('Training example count: %d; Feature count: %d.\n', m, n);
 
 X = data(:, 1:(n - 1));
@@ -108,8 +107,7 @@ fprintf('Solving with normal equations...\n');
 
 %% Load Data
 data = load('ex1data2.txt');
-m = size(data, 1);
-n = size(data, 2);
+[m, n] = size(data);
 fprintf('Training example count: %d; Feature count: %d.\n', m, n);
 
 X = data(:, 1:(n - 1));
@@ -125,7 +123,6 @@ theta = normalEqn(X, y);
 fprintf('Theta computed from the normal equations: \n');
 fprintf(' %f \n', theta);
 fprintf('\n');
-
 
 % Estimate the price of a 1650 sq-ft, 3 br house
 % ====================== YOUR CODE HERE ======================
