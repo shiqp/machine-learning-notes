@@ -1,6 +1,7 @@
 %% Machine Learning Online Class - Exercise 1: Linear Regression
 
 %% Initialization
+%% Clear and Close Figures
 clear ; close all; clc
 
 %% ==================== Part 1: Basic Function ====================
